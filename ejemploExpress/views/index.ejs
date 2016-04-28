@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <p>Suma: <%= suma %></p>
+
+    <% if (segundo % 2 === 0) { %>
+    <p>el segundo <%= segundo %> es par </p>
+    <% } else { %>
+    <p>el segundo <%= segundo %> es impar </p>
+    <% } %>
+
+  <% users.forEach(function  (users) { %>
+  <p> Usuario:  <%= users %></p>
+  <% }) %>
+  </body>
+</html>
